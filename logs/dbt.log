@@ -30604,3 +30604,1108 @@ from cte
   );
   
 [0m19:02:19.368863 [debug] [Thread-1 (]: SQL status: SELECT 21124 in 1.717 seconds
+[0m13:14:41.506666 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062f5f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106365d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106366410>]}
+
+
+============================== 13:14:41.565401 | a9ba88d0-0b12-4fd9-bfd6-39692a8f0f56 ==============================
+[0m13:14:41.565401 [info ] [MainThread]: Running with dbt=1.10.2
+[0m13:14:41.566666 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:14:41.574574 [error] [MainThread]: Encountered an error:
+Runtime Error
+  The profile 'dbt_weather' does not have a target named ''. The valid target names for this profile are:
+   - dev
+   - prod
+[0m13:14:41.623270 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.24125227, "process_in_blocks": "0", "process_kernel_time": 0.920075, "process_mem_max_rss": "124649472", "process_out_blocks": "0", "process_user_time": 3.366677}
+[0m13:14:41.624678 [debug] [MainThread]: Command `dbt run` failed at 13:14:41.624292 after 0.24 seconds
+[0m13:14:41.625490 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10632c750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062ebd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1062ebcd0>]}
+[0m13:14:41.625963 [debug] [MainThread]: Flushing usage events
+[0m13:14:41.956063 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:15:12.674011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3edb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a421b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3e1e10>]}
+
+
+============================== 13:15:12.689376 | bf625088-fec8-4874-919b-dddb24a3d46d ==============================
+[0m13:15:12.689376 [info ] [MainThread]: Running with dbt=1.10.2
+[0m13:15:12.690555 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather/logs', 'debug': 'False', 'profiles_dir': '/Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:15:12.696095 [error] [MainThread]: Encountered an error:
+Runtime Error
+  The profile 'dbt_weather' does not have a target named ''. The valid target names for this profile are:
+   - dev
+   - prod
+[0m13:15:12.700721 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.14538954, "process_in_blocks": "0", "process_kernel_time": 0.437304, "process_mem_max_rss": "101425152", "process_out_blocks": "0", "process_user_time": 1.899564}
+[0m13:15:12.701761 [debug] [MainThread]: Command `dbt run` failed at 13:15:12.701502 after 0.15 seconds
+[0m13:15:12.702520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a3e1090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a47fb50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b1dd90>]}
+[0m13:15:12.703406 [debug] [MainThread]: Flushing usage events
+[0m13:15:13.121957 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:16:36.983368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f92390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f860d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112ff4bd0>]}
+
+
+============================== 13:16:36.991526 | 36bffd7d-3463-48d5-bcb3-d1835703a744 ==============================
+[0m13:16:36.991526 [info ] [MainThread]: Running with dbt=1.10.2
+[0m13:16:36.992525 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:16:37.007352 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DBT_DEV_HOST'
+[0m13:16:37.013263 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.12635745, "process_in_blocks": "0", "process_kernel_time": 0.453064, "process_mem_max_rss": "101961728", "process_out_blocks": "0", "process_user_time": 1.897309}
+[0m13:16:37.014304 [debug] [MainThread]: Command `dbt run` failed at 13:16:37.014075 after 0.13 seconds
+[0m13:16:37.015205 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112f85410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113013690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112d45490>]}
+[0m13:16:37.017265 [debug] [MainThread]: Flushing usage events
+[0m13:16:37.255608 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:18:14.855862 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec57e90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ecd3350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ecd3bd0>]}
+
+
+============================== 13:18:14.877279 | ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6 ==============================
+[0m13:18:14.877279 [info ] [MainThread]: Running with dbt=1.10.2
+[0m13:18:14.878296 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather/logs', 'debug': 'False', 'profiles_dir': '/Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m13:18:20.467582 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f146150>]}
+[0m13:18:20.546971 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c22bb10>]}
+[0m13:18:20.549573 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m13:18:20.783706 [debug] [MainThread]: checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, vars: {}, profile: , target: , version: 1.10.2
+[0m13:18:20.964594 [info ] [MainThread]: Unable to do partial parsing because config vars, config profile, or config target have changed
+[0m13:18:20.965323 [debug] [MainThread]: previous checksum: 1adc40777973ef30f45f80b3b6d04d5013c1edd53d96363881b3b199e612468b, current checksum: be0e1532a8b44c6b57ef1c5ec449efeaf1bb8d6413e9df94727a86ece65a370b
+[0m13:18:20.965744 [info ] [MainThread]: Unable to do partial parsing because profile has changed
+[0m13:18:20.966331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f1cc8d0>]}
+[0m13:18:23.254382 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dbt_weather.example
+[0m13:18:23.271991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd34490>]}
+[0m13:18:23.448468 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather/target/manifest.json
+[0m13:18:23.451740 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather/target/semantic_manifest.json
+[0m13:18:23.567665 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f908890>]}
+[0m13:18:23.568341 [info ] [MainThread]: Found 12 models, 115 data tests, 1 source, 550 macros
+[0m13:18:23.568785 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fdbb710>]}
+[0m13:18:23.572936 [info ] [MainThread]: 
+[0m13:18:23.573443 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m13:18:23.573809 [info ] [MainThread]: 
+[0m13:18:23.574336 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m13:18:23.581040 [debug] [ThreadPool]: Acquiring new postgres connection 'list_rust_kafka'
+[0m13:18:23.697025 [debug] [ThreadPool]: Using postgres connection "list_rust_kafka"
+[0m13:18:23.697539 [debug] [ThreadPool]: On list_rust_kafka: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_rust_kafka"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m13:18:23.697913 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m13:18:24.115297 [debug] [ThreadPool]: SQL status: SELECT 14 in 0.417 seconds
+[0m13:18:24.121254 [debug] [ThreadPool]: On list_rust_kafka: Close
+[0m13:18:24.124147 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_rust_kafka, now list_rust_kafka_public)
+[0m13:18:24.133796 [debug] [ThreadPool]: Using postgres connection "list_rust_kafka_public"
+[0m13:18:24.134261 [debug] [ThreadPool]: On list_rust_kafka_public: BEGIN
+[0m13:18:24.134595 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m13:18:24.166566 [debug] [ThreadPool]: SQL status: BEGIN in 0.032 seconds
+[0m13:18:24.167231 [debug] [ThreadPool]: Using postgres connection "list_rust_kafka_public"
+[0m13:18:24.167794 [debug] [ThreadPool]: On list_rust_kafka_public: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "list_rust_kafka_public"} */
+select
+      'rust_kafka' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'rust_kafka' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'rust_kafka' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m13:18:24.289444 [debug] [ThreadPool]: SQL status: SELECT 14 in 0.121 seconds
+[0m13:18:24.291663 [debug] [ThreadPool]: On list_rust_kafka_public: ROLLBACK
+[0m13:18:24.293153 [debug] [ThreadPool]: On list_rust_kafka_public: Close
+[0m13:18:24.302336 [debug] [MainThread]: Using postgres connection "master"
+[0m13:18:24.302769 [debug] [MainThread]: On master: BEGIN
+[0m13:18:24.303083 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m13:18:24.321332 [debug] [MainThread]: SQL status: BEGIN in 0.018 seconds
+[0m13:18:24.321828 [debug] [MainThread]: Using postgres connection "master"
+[0m13:18:24.322250 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m13:18:24.439400 [debug] [MainThread]: SQL status: SELECT 55 in 0.117 seconds
+[0m13:18:24.444078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fdb8c90>]}
+[0m13:18:24.444613 [debug] [MainThread]: On master: ROLLBACK
+[0m13:18:24.445778 [debug] [MainThread]: Using postgres connection "master"
+[0m13:18:24.446195 [debug] [MainThread]: On master: BEGIN
+[0m13:18:24.447763 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m13:18:24.448259 [debug] [MainThread]: On master: COMMIT
+[0m13:18:24.448595 [debug] [MainThread]: Using postgres connection "master"
+[0m13:18:24.448910 [debug] [MainThread]: On master: COMMIT
+[0m13:18:24.449914 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m13:18:24.450351 [debug] [MainThread]: On master: Close
+[0m13:18:24.454179 [debug] [Thread-1 (]: Began running node model.dbt_weather.stg_open_meteo__air_quality
+[0m13:18:24.454842 [info ] [Thread-1 (]: 1 of 12 START sql incremental model public.stg_open_meteo__air_quality ......... [RUN]
+[0m13:18:24.455354 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_rust_kafka_public, now model.dbt_weather.stg_open_meteo__air_quality)
+[0m13:18:24.455786 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.stg_open_meteo__air_quality
+[0m13:18:24.468236 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.stg_open_meteo__air_quality"
+[0m13:18:24.470404 [debug] [Thread-1 (]: Began executing node model.dbt_weather.stg_open_meteo__air_quality
+[0m13:18:24.528724 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.stg_open_meteo__air_quality"
+[0m13:18:24.529283 [debug] [Thread-1 (]: On model.dbt_weather.stg_open_meteo__air_quality: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.stg_open_meteo__air_quality"} */
+
+    
+  
+    
+
+  create temporary table "stg_open_meteo__air_quality__dbt_tmp131824503523"
+  
+  
+    as
+  
+  (
+    
+
+with cte as (
+    select *
+    from "rust_kafka"."public"."air_quality"
+    
+    where _time > (select MAX(_time) from "rust_kafka"."public"."stg_open_meteo__air_quality")
+    
+)
+
+select *
+from cte
+  );
+  
+  
+[0m13:18:24.529695 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:24.751646 [debug] [Thread-1 (]: SQL status: SELECT 2 in 0.222 seconds
+[0m13:18:24.767525 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.stg_open_meteo__air_quality"
+[0m13:18:24.768041 [debug] [Thread-1 (]: On model.dbt_weather.stg_open_meteo__air_quality: BEGIN
+[0m13:18:24.769454 [debug] [Thread-1 (]: SQL status: BEGIN in 0.001 seconds
+[0m13:18:24.769973 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.stg_open_meteo__air_quality"
+[0m13:18:24.770386 [debug] [Thread-1 (]: On model.dbt_weather.stg_open_meteo__air_quality: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.stg_open_meteo__air_quality"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from INFORMATION_SCHEMA.columns
+      where table_name = 'stg_open_meteo__air_quality__dbt_tmp131824503523'
+        
+      order by ordinal_position
+
+  
+[0m13:18:24.864652 [debug] [Thread-1 (]: SQL status: SELECT 14 in 0.094 seconds
+[0m13:18:24.875422 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.stg_open_meteo__air_quality"
+[0m13:18:24.876156 [debug] [Thread-1 (]: On model.dbt_weather.stg_open_meteo__air_quality: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.stg_open_meteo__air_quality"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "rust_kafka".INFORMATION_SCHEMA.columns
+      where table_name = 'stg_open_meteo__air_quality'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m13:18:24.882022 [debug] [Thread-1 (]: SQL status: SELECT 14 in 0.005 seconds
+[0m13:18:24.889979 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.stg_open_meteo__air_quality"
+[0m13:18:24.890484 [debug] [Thread-1 (]: On model.dbt_weather.stg_open_meteo__air_quality: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.stg_open_meteo__air_quality"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from "rust_kafka".INFORMATION_SCHEMA.columns
+      where table_name = 'stg_open_meteo__air_quality'
+        
+        and table_schema = 'public'
+        
+      order by ordinal_position
+
+  
+[0m13:18:24.896097 [debug] [Thread-1 (]: SQL status: SELECT 14 in 0.005 seconds
+[0m13:18:24.907245 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.stg_open_meteo__air_quality"
+[0m13:18:24.908230 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.stg_open_meteo__air_quality"
+[0m13:18:24.908685 [debug] [Thread-1 (]: On model.dbt_weather.stg_open_meteo__air_quality: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.stg_open_meteo__air_quality"} */
+
+      insert into "rust_kafka"."public"."stg_open_meteo__air_quality" ("_time", "pm10", "pm2_5", "carbon_monoxide", "carbon_dioxide", "nitrogen_dioxide", "sulphur_dioxide", "ozone", "methane", "uv_index", "dust", "aerosol_optical_depth", "us_aqi", "insert_time")
+    (
+        select "_time", "pm10", "pm2_5", "carbon_monoxide", "carbon_dioxide", "nitrogen_dioxide", "sulphur_dioxide", "ozone", "methane", "uv_index", "dust", "aerosol_optical_depth", "us_aqi", "insert_time"
+        from "stg_open_meteo__air_quality__dbt_tmp131824503523"
+    )
+
+
+  
+[0m13:18:24.915898 [debug] [Thread-1 (]: SQL status: INSERT 0 2 in 0.007 seconds
+[0m13:18:24.930978 [debug] [Thread-1 (]: On model.dbt_weather.stg_open_meteo__air_quality: COMMIT
+[0m13:18:24.931537 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.stg_open_meteo__air_quality"
+[0m13:18:24.931916 [debug] [Thread-1 (]: On model.dbt_weather.stg_open_meteo__air_quality: COMMIT
+[0m13:18:24.935361 [debug] [Thread-1 (]: SQL status: COMMIT in 0.003 seconds
+[0m13:18:24.937585 [debug] [Thread-1 (]: On model.dbt_weather.stg_open_meteo__air_quality: Close
+[0m13:18:24.941296 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd8d5d0>]}
+[0m13:18:24.942154 [info ] [Thread-1 (]: 1 of 12 OK created sql incremental model public.stg_open_meteo__air_quality .... [[32mINSERT 0 2[0m in 0.48s]
+[0m13:18:24.943158 [debug] [Thread-1 (]: Finished running node model.dbt_weather.stg_open_meteo__air_quality
+[0m13:18:24.944239 [debug] [Thread-1 (]: Began running node model.dbt_weather.dim_date
+[0m13:18:24.944835 [info ] [Thread-1 (]: 2 of 12 START sql view model public.dim_date ................................... [RUN]
+[0m13:18:24.945412 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.stg_open_meteo__air_quality, now model.dbt_weather.dim_date)
+[0m13:18:24.946039 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.dim_date
+[0m13:18:24.951416 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.dim_date"
+[0m13:18:24.953871 [debug] [Thread-1 (]: Began executing node model.dbt_weather.dim_date
+[0m13:18:24.976385 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.dim_date"
+[0m13:18:24.977326 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.dim_date"
+[0m13:18:24.977730 [debug] [Thread-1 (]: On model.dbt_weather.dim_date: BEGIN
+[0m13:18:24.978085 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:24.995547 [debug] [Thread-1 (]: SQL status: BEGIN in 0.017 seconds
+[0m13:18:24.996077 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.dim_date"
+[0m13:18:24.996491 [debug] [Thread-1 (]: On model.dbt_weather.dim_date: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.dim_date"} */
+
+  create view "rust_kafka"."public"."dim_date__dbt_tmp"
+    
+    
+  as (
+    
+
+with date_range as (
+    select min(date(_time)) as start_date,
+        max(date(_time)) as end_date
+    from "rust_kafka"."public"."stg_open_meteo__air_quality"
+),
+
+dates as (
+    select generate_series(start_date, end_date, interval '1 day') as day_date
+    from date_range
+)
+
+select day_date,
+    extract(year FROM day_date) as year,
+    extract(month from day_date) as month,
+    to_char(day_date, 'Month') as month_name,
+    extract(day from day_date) as day_of_month,
+    extract(dow from day_date) as day_of_week,
+    to_char(day_date, 'Day') as day_name,
+    case when extract(dow from day_date) in (0, 6) then TRUE else FALSE end as is_weekend
+from dates
+  );
+[0m13:18:25.030084 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.033 seconds
+[0m13:18:25.038180 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.dim_date"
+[0m13:18:25.038733 [debug] [Thread-1 (]: On model.dbt_weather.dim_date: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.dim_date"} */
+alter table "rust_kafka"."public"."dim_date" rename to "dim_date__dbt_backup"
+[0m13:18:25.048469 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.009 seconds
+[0m13:18:25.053882 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.dim_date"
+[0m13:18:25.054418 [debug] [Thread-1 (]: On model.dbt_weather.dim_date: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.dim_date"} */
+alter table "rust_kafka"."public"."dim_date__dbt_tmp" rename to "dim_date"
+[0m13:18:25.057442 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.002 seconds
+[0m13:18:25.060981 [debug] [Thread-1 (]: On model.dbt_weather.dim_date: COMMIT
+[0m13:18:25.061458 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.dim_date"
+[0m13:18:25.061859 [debug] [Thread-1 (]: On model.dbt_weather.dim_date: COMMIT
+[0m13:18:25.063902 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m13:18:25.070451 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."dim_date__dbt_backup"
+[0m13:18:25.076467 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.dim_date"
+[0m13:18:25.076954 [debug] [Thread-1 (]: On model.dbt_weather.dim_date: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.dim_date"} */
+drop view if exists "rust_kafka"."public"."dim_date__dbt_backup" cascade
+[0m13:18:25.137374 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.060 seconds
+[0m13:18:25.139253 [debug] [Thread-1 (]: On model.dbt_weather.dim_date: Close
+[0m13:18:25.140326 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110284490>]}
+[0m13:18:25.141177 [info ] [Thread-1 (]: 2 of 12 OK created sql view model public.dim_date .............................. [[32mCREATE VIEW[0m in 0.19s]
+[0m13:18:25.142199 [debug] [Thread-1 (]: Finished running node model.dbt_weather.dim_date
+[0m13:18:25.142730 [debug] [Thread-1 (]: Began running node model.dbt_weather.int_air_quality_rolling_24h
+[0m13:18:25.143682 [info ] [Thread-1 (]: 3 of 12 START sql table model public.int_air_quality_rolling_24h ............... [RUN]
+[0m13:18:25.144283 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.dim_date, now model.dbt_weather.int_air_quality_rolling_24h)
+[0m13:18:25.144852 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.int_air_quality_rolling_24h
+[0m13:18:25.161841 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.int_air_quality_rolling_24h"
+[0m13:18:25.166711 [debug] [Thread-1 (]: Began executing node model.dbt_weather.int_air_quality_rolling_24h
+[0m13:18:25.184906 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.int_air_quality_rolling_24h"
+[0m13:18:25.186416 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_24h"
+[0m13:18:25.187137 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_24h: BEGIN
+[0m13:18:25.187764 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:25.215241 [debug] [Thread-1 (]: SQL status: BEGIN in 0.027 seconds
+[0m13:18:25.216265 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_24h"
+[0m13:18:25.217055 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_24h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_24h"} */
+
+  
+    
+
+  create  table "rust_kafka"."public"."int_air_quality_rolling_24h__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with cte as (
+    select _time,
+        pm10,
+        pm2_5,
+        carbon_monoxide,
+        carbon_dioxide,
+        nitrogen_dioxide,
+        sulphur_dioxide,
+        ozone,
+        methane,
+        uv_index,
+        dust,
+        aerosol_optical_depth,
+        us_aqi
+    from "rust_kafka"."public"."stg_open_meteo__air_quality"
+)
+
+select _time,
+    
+        avg(pm10) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as pm10_rolling_24h,
+    
+        avg(pm2_5) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as pm2_5_rolling_24h,
+    
+        avg(carbon_monoxide) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as carbon_monoxide_rolling_24h,
+    
+        avg(carbon_dioxide) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as carbon_dioxide_rolling_24h,
+    
+        avg(nitrogen_dioxide) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as nitrogen_dioxide_rolling_24h,
+    
+        avg(sulphur_dioxide) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as sulphur_dioxide_rolling_24h,
+    
+        avg(ozone) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as ozone_rolling_24h,
+    
+        avg(methane) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as methane_rolling_24h,
+    
+        avg(uv_index) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as uv_index_rolling_24h,
+    
+        avg(dust) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as dust_rolling_24h,
+    
+        avg(aerosol_optical_depth) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as aerosol_optical_depth_rolling_24h,
+    
+        avg(us_aqi) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as us_aqi_rolling_24h
+    
+from cte
+  );
+  
+[0m13:18:25.576729 [debug] [Thread-1 (]: SQL status: SELECT 21126 in 0.359 seconds
+[0m13:18:25.584170 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_24h"
+[0m13:18:25.584716 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_24h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_24h"} */
+alter table "rust_kafka"."public"."int_air_quality_rolling_24h" rename to "int_air_quality_rolling_24h__dbt_backup"
+[0m13:18:25.586533 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:18:25.589726 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_24h"
+[0m13:18:25.590197 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_24h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_24h"} */
+alter table "rust_kafka"."public"."int_air_quality_rolling_24h__dbt_tmp" rename to "int_air_quality_rolling_24h"
+[0m13:18:25.591696 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:18:25.593092 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_24h: COMMIT
+[0m13:18:25.593514 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_24h"
+[0m13:18:25.593914 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_24h: COMMIT
+[0m13:18:25.602124 [debug] [Thread-1 (]: SQL status: COMMIT in 0.008 seconds
+[0m13:18:25.605123 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."int_air_quality_rolling_24h__dbt_backup"
+[0m13:18:25.608073 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_24h"
+[0m13:18:25.608536 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_24h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_24h"} */
+drop table if exists "rust_kafka"."public"."int_air_quality_rolling_24h__dbt_backup" cascade
+[0m13:18:25.717940 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.109 seconds
+[0m13:18:25.719624 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_24h: Close
+[0m13:18:25.720452 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11028f7d0>]}
+[0m13:18:25.721336 [info ] [Thread-1 (]: 3 of 12 OK created sql table model public.int_air_quality_rolling_24h .......... [[32mSELECT 21126[0m in 0.58s]
+[0m13:18:25.722111 [debug] [Thread-1 (]: Finished running node model.dbt_weather.int_air_quality_rolling_24h
+[0m13:18:25.722617 [debug] [Thread-1 (]: Began running node model.dbt_weather.int_air_quality_rolling_3h
+[0m13:18:25.723427 [info ] [Thread-1 (]: 4 of 12 START sql table model public.int_air_quality_rolling_3h ................ [RUN]
+[0m13:18:25.724168 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.int_air_quality_rolling_24h, now model.dbt_weather.int_air_quality_rolling_3h)
+[0m13:18:25.724626 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.int_air_quality_rolling_3h
+[0m13:18:25.730773 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.int_air_quality_rolling_3h"
+[0m13:18:25.732222 [debug] [Thread-1 (]: Began executing node model.dbt_weather.int_air_quality_rolling_3h
+[0m13:18:25.736695 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.int_air_quality_rolling_3h"
+[0m13:18:25.737617 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_3h"
+[0m13:18:25.738039 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_3h: BEGIN
+[0m13:18:25.738406 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:25.760137 [debug] [Thread-1 (]: SQL status: BEGIN in 0.022 seconds
+[0m13:18:25.762685 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_3h"
+[0m13:18:25.763234 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_3h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_3h"} */
+
+  
+    
+
+  create  table "rust_kafka"."public"."int_air_quality_rolling_3h__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with cte as (
+    select _time,
+        pm10,
+        pm2_5,
+        carbon_monoxide,
+        carbon_dioxide,
+        nitrogen_dioxide,
+        sulphur_dioxide,
+        ozone,
+        methane,
+        uv_index,
+        dust,
+        aerosol_optical_depth,
+        us_aqi
+    from "rust_kafka"."public"."stg_open_meteo__air_quality"
+)
+
+select _time,
+    
+        avg(pm10) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as pm10_rolling_3h,
+    
+        avg(pm2_5) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as pm2_5_rolling_3h,
+    
+        avg(carbon_monoxide) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as carbon_monoxide_rolling_3h,
+    
+        avg(carbon_dioxide) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as carbon_dioxide_rolling_3h,
+    
+        avg(nitrogen_dioxide) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as nitrogen_dioxide_rolling_3h,
+    
+        avg(sulphur_dioxide) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as sulphur_dioxide_rolling_3h,
+    
+        avg(ozone) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as ozone_rolling_3h,
+    
+        avg(methane) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as methane_rolling_3h,
+    
+        avg(uv_index) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as uv_index_rolling_3h,
+    
+        avg(dust) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as dust_rolling_3h,
+    
+        avg(aerosol_optical_depth) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as aerosol_optical_depth_rolling_3h,
+    
+        avg(us_aqi) over (
+            order by _time
+            rows between 3 preceding and current row
+        ) as us_aqi_rolling_3h
+    
+from cte
+  );
+  
+[0m13:18:25.920552 [debug] [Thread-1 (]: SQL status: SELECT 21126 in 0.156 seconds
+[0m13:18:25.926880 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_3h"
+[0m13:18:25.927651 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_3h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_3h"} */
+alter table "rust_kafka"."public"."int_air_quality_rolling_3h" rename to "int_air_quality_rolling_3h__dbt_backup"
+[0m13:18:25.929626 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:18:25.932814 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_3h"
+[0m13:18:25.933247 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_3h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_3h"} */
+alter table "rust_kafka"."public"."int_air_quality_rolling_3h__dbt_tmp" rename to "int_air_quality_rolling_3h"
+[0m13:18:25.934750 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:18:25.936179 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_3h: COMMIT
+[0m13:18:25.936600 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_3h"
+[0m13:18:25.936994 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_3h: COMMIT
+[0m13:18:25.942692 [debug] [Thread-1 (]: SQL status: COMMIT in 0.005 seconds
+[0m13:18:25.945366 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."int_air_quality_rolling_3h__dbt_backup"
+[0m13:18:25.946010 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_3h"
+[0m13:18:25.946403 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_3h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_3h"} */
+drop table if exists "rust_kafka"."public"."int_air_quality_rolling_3h__dbt_backup" cascade
+[0m13:18:25.952826 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.006 seconds
+[0m13:18:25.954273 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_3h: Close
+[0m13:18:25.954983 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11017a150>]}
+[0m13:18:25.955788 [info ] [Thread-1 (]: 4 of 12 OK created sql table model public.int_air_quality_rolling_3h ........... [[32mSELECT 21126[0m in 0.23s]
+[0m13:18:25.956464 [debug] [Thread-1 (]: Finished running node model.dbt_weather.int_air_quality_rolling_3h
+[0m13:18:25.956903 [debug] [Thread-1 (]: Began running node model.dbt_weather.int_air_quality_rolling_7d
+[0m13:18:25.957492 [info ] [Thread-1 (]: 5 of 12 START sql table model public.int_air_quality_rolling_7d ................ [RUN]
+[0m13:18:25.958112 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.int_air_quality_rolling_3h, now model.dbt_weather.int_air_quality_rolling_7d)
+[0m13:18:25.958517 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.int_air_quality_rolling_7d
+[0m13:18:25.964978 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.int_air_quality_rolling_7d"
+[0m13:18:25.967082 [debug] [Thread-1 (]: Began executing node model.dbt_weather.int_air_quality_rolling_7d
+[0m13:18:25.971944 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.int_air_quality_rolling_7d"
+[0m13:18:25.972852 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_7d"
+[0m13:18:25.973267 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_7d: BEGIN
+[0m13:18:25.974806 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:25.995703 [debug] [Thread-1 (]: SQL status: BEGIN in 0.021 seconds
+[0m13:18:25.996229 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_7d"
+[0m13:18:25.996716 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_7d: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_7d"} */
+
+  
+    
+
+  create  table "rust_kafka"."public"."int_air_quality_rolling_7d__dbt_tmp"
+  
+  
+    as
+  
+  (
+    
+
+with cte as (
+    select _time,
+        pm10,
+        pm2_5,
+        carbon_monoxide,
+        carbon_dioxide,
+        nitrogen_dioxide,
+        sulphur_dioxide,
+        ozone,
+        methane,
+        uv_index,
+        dust,
+        aerosol_optical_depth,
+        us_aqi
+    from "rust_kafka"."public"."stg_open_meteo__air_quality"
+)
+
+select _time,
+    
+        avg(pm10) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as pm10_rolling_7d,
+    
+        avg(pm2_5) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as pm2_5_rolling_7d,
+    
+        avg(carbon_monoxide) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as carbon_monoxide_rolling_7d,
+    
+        avg(carbon_dioxide) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as carbon_dioxide_rolling_7d,
+    
+        avg(nitrogen_dioxide) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as nitrogen_dioxide_rolling_7d,
+    
+        avg(sulphur_dioxide) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as sulphur_dioxide_rolling_7d,
+    
+        avg(ozone) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as ozone_rolling_7d,
+    
+        avg(methane) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as methane_rolling_7d,
+    
+        avg(uv_index) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as uv_index_rolling_7d,
+    
+        avg(dust) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as dust_rolling_7d,
+    
+        avg(aerosol_optical_depth) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as aerosol_optical_depth_rolling_7d,
+    
+        avg(us_aqi) over (
+            order by _time
+            rows between 168 preceding and current row
+        ) as us_aqi_rolling_7d
+    
+from cte
+  );
+  
+[0m13:18:27.602307 [debug] [Thread-1 (]: SQL status: SELECT 21126 in 1.605 seconds
+[0m13:18:27.605605 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_7d"
+[0m13:18:27.606087 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_7d: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_7d"} */
+alter table "rust_kafka"."public"."int_air_quality_rolling_7d" rename to "int_air_quality_rolling_7d__dbt_backup"
+[0m13:18:27.607849 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:18:27.611024 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_7d"
+[0m13:18:27.611467 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_7d: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_7d"} */
+alter table "rust_kafka"."public"."int_air_quality_rolling_7d__dbt_tmp" rename to "int_air_quality_rolling_7d"
+[0m13:18:27.613156 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:18:27.614574 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_7d: COMMIT
+[0m13:18:27.615002 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_7d"
+[0m13:18:27.615366 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_7d: COMMIT
+[0m13:18:27.618152 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m13:18:27.620766 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."int_air_quality_rolling_7d__dbt_backup"
+[0m13:18:27.621453 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_air_quality_rolling_7d"
+[0m13:18:27.621885 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_7d: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_air_quality_rolling_7d"} */
+drop table if exists "rust_kafka"."public"."int_air_quality_rolling_7d__dbt_backup" cascade
+[0m13:18:27.630284 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.008 seconds
+[0m13:18:27.631942 [debug] [Thread-1 (]: On model.dbt_weather.int_air_quality_rolling_7d: Close
+[0m13:18:27.632709 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd1ca90>]}
+[0m13:18:27.633548 [info ] [Thread-1 (]: 5 of 12 OK created sql table model public.int_air_quality_rolling_7d ........... [[32mSELECT 21126[0m in 1.67s]
+[0m13:18:27.634234 [debug] [Thread-1 (]: Finished running node model.dbt_weather.int_air_quality_rolling_7d
+[0m13:18:27.634847 [debug] [Thread-1 (]: Began running node model.dbt_weather.int_pollutant_cumulative_exposure_24h
+[0m13:18:27.635965 [info ] [Thread-1 (]: 6 of 12 START sql view model public.int_pollutant_cumulative_exposure_24h ...... [RUN]
+[0m13:18:27.636542 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.int_air_quality_rolling_7d, now model.dbt_weather.int_pollutant_cumulative_exposure_24h)
+[0m13:18:27.636977 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.int_pollutant_cumulative_exposure_24h
+[0m13:18:27.642343 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.int_pollutant_cumulative_exposure_24h"
+[0m13:18:27.644640 [debug] [Thread-1 (]: Began executing node model.dbt_weather.int_pollutant_cumulative_exposure_24h
+[0m13:18:27.652602 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.int_pollutant_cumulative_exposure_24h"
+[0m13:18:27.653865 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_pollutant_cumulative_exposure_24h"
+[0m13:18:27.654762 [debug] [Thread-1 (]: On model.dbt_weather.int_pollutant_cumulative_exposure_24h: BEGIN
+[0m13:18:27.656222 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:27.675462 [debug] [Thread-1 (]: SQL status: BEGIN in 0.019 seconds
+[0m13:18:27.676000 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_pollutant_cumulative_exposure_24h"
+[0m13:18:27.676409 [debug] [Thread-1 (]: On model.dbt_weather.int_pollutant_cumulative_exposure_24h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_pollutant_cumulative_exposure_24h"} */
+
+  create view "rust_kafka"."public"."int_pollutant_cumulative_exposure_24h__dbt_tmp"
+    
+    
+  as (
+    
+
+with cte as (
+    select _time,
+        pm10,
+        pm2_5
+    from "rust_kafka"."public"."stg_open_meteo__air_quality"
+)
+
+select _time,
+    
+        sum(pm10) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as pm10_cumulative_24h,
+    
+        sum(pm2_5) over (
+            order by _time
+            rows between 24 preceding and current row
+        ) as pm2_5_cumulative_24h
+    
+from cte
+  );
+[0m13:18:27.682162 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.005 seconds
+[0m13:18:27.685733 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_pollutant_cumulative_exposure_24h"
+[0m13:18:27.686192 [debug] [Thread-1 (]: On model.dbt_weather.int_pollutant_cumulative_exposure_24h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_pollutant_cumulative_exposure_24h"} */
+alter table "rust_kafka"."public"."int_pollutant_cumulative_exposure_24h" rename to "int_pollutant_cumulative_exposure_24h__dbt_backup"
+[0m13:18:27.692040 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.005 seconds
+[0m13:18:27.695768 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_pollutant_cumulative_exposure_24h"
+[0m13:18:27.696249 [debug] [Thread-1 (]: On model.dbt_weather.int_pollutant_cumulative_exposure_24h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_pollutant_cumulative_exposure_24h"} */
+alter table "rust_kafka"."public"."int_pollutant_cumulative_exposure_24h__dbt_tmp" rename to "int_pollutant_cumulative_exposure_24h"
+[0m13:18:27.697983 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m13:18:27.699405 [debug] [Thread-1 (]: On model.dbt_weather.int_pollutant_cumulative_exposure_24h: COMMIT
+[0m13:18:27.699833 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_pollutant_cumulative_exposure_24h"
+[0m13:18:27.700205 [debug] [Thread-1 (]: On model.dbt_weather.int_pollutant_cumulative_exposure_24h: COMMIT
+[0m13:18:27.702455 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m13:18:27.705435 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."int_pollutant_cumulative_exposure_24h__dbt_backup"
+[0m13:18:27.706071 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.int_pollutant_cumulative_exposure_24h"
+[0m13:18:27.706467 [debug] [Thread-1 (]: On model.dbt_weather.int_pollutant_cumulative_exposure_24h: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.int_pollutant_cumulative_exposure_24h"} */
+drop view if exists "rust_kafka"."public"."int_pollutant_cumulative_exposure_24h__dbt_backup" cascade
+[0m13:18:27.711652 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.005 seconds
+[0m13:18:27.713123 [debug] [Thread-1 (]: On model.dbt_weather.int_pollutant_cumulative_exposure_24h: Close
+[0m13:18:27.713905 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110175090>]}
+[0m13:18:27.714700 [info ] [Thread-1 (]: 6 of 12 OK created sql view model public.int_pollutant_cumulative_exposure_24h . [[32mCREATE VIEW[0m in 0.08s]
+[0m13:18:27.715366 [debug] [Thread-1 (]: Finished running node model.dbt_weather.int_pollutant_cumulative_exposure_24h
+[0m13:18:27.715943 [debug] [Thread-1 (]: Began running node model.dbt_weather.fct_air_quality_measurements
+[0m13:18:27.717049 [info ] [Thread-1 (]: 7 of 12 START sql view model public.fct_air_quality_measurements ............... [RUN]
+[0m13:18:27.717615 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.int_pollutant_cumulative_exposure_24h, now model.dbt_weather.fct_air_quality_measurements)
+[0m13:18:27.718078 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.fct_air_quality_measurements
+[0m13:18:27.722694 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.fct_air_quality_measurements"
+[0m13:18:27.724964 [debug] [Thread-1 (]: Began executing node model.dbt_weather.fct_air_quality_measurements
+[0m13:18:27.729214 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.fct_air_quality_measurements"
+[0m13:18:27.730130 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.fct_air_quality_measurements"
+[0m13:18:27.731234 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_measurements: BEGIN
+[0m13:18:27.733436 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:27.753998 [debug] [Thread-1 (]: SQL status: BEGIN in 0.021 seconds
+[0m13:18:27.754530 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.fct_air_quality_measurements"
+[0m13:18:27.754931 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_measurements: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.fct_air_quality_measurements"} */
+
+  create view "rust_kafka"."public"."fct_air_quality_measurements__dbt_tmp"
+    
+    
+  as (
+    select _time,
+    pm2_5_rolling_24h,
+    pm10_rolling_24h
+from  "rust_kafka"."public"."int_air_quality_rolling_24h"
+  );
+[0m13:18:27.758056 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.003 seconds
+[0m13:18:27.761517 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.fct_air_quality_measurements"
+[0m13:18:27.762002 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_measurements: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.fct_air_quality_measurements"} */
+alter table "rust_kafka"."public"."fct_air_quality_measurements__dbt_tmp" rename to "fct_air_quality_measurements"
+[0m13:18:27.766310 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m13:18:27.767712 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_measurements: COMMIT
+[0m13:18:27.768148 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.fct_air_quality_measurements"
+[0m13:18:27.768517 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_measurements: COMMIT
+[0m13:18:27.771254 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m13:18:27.774403 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."fct_air_quality_measurements__dbt_backup"
+[0m13:18:27.775033 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.fct_air_quality_measurements"
+[0m13:18:27.775438 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_measurements: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.fct_air_quality_measurements"} */
+drop view if exists "rust_kafka"."public"."fct_air_quality_measurements__dbt_backup" cascade
+[0m13:18:27.776966 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m13:18:27.778525 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_measurements: Close
+[0m13:18:27.779342 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110151f50>]}
+[0m13:18:27.780149 [info ] [Thread-1 (]: 7 of 12 OK created sql view model public.fct_air_quality_measurements .......... [[32mCREATE VIEW[0m in 0.06s]
+[0m13:18:27.780893 [debug] [Thread-1 (]: Finished running node model.dbt_weather.fct_air_quality_measurements
+[0m13:18:27.781362 [debug] [Thread-1 (]: Began running node model.dbt_weather.fct_air_quality_cumulative_exposure
+[0m13:18:27.782229 [info ] [Thread-1 (]: 8 of 12 START sql view model public.fct_air_quality_cumulative_exposure ........ [RUN]
+[0m13:18:27.782979 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.fct_air_quality_measurements, now model.dbt_weather.fct_air_quality_cumulative_exposure)
+[0m13:18:27.783435 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.fct_air_quality_cumulative_exposure
+[0m13:18:27.788131 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.fct_air_quality_cumulative_exposure"
+[0m13:18:27.791403 [debug] [Thread-1 (]: Began executing node model.dbt_weather.fct_air_quality_cumulative_exposure
+[0m13:18:27.796623 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.fct_air_quality_cumulative_exposure"
+[0m13:18:27.799865 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.fct_air_quality_cumulative_exposure"
+[0m13:18:27.800764 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_cumulative_exposure: BEGIN
+[0m13:18:27.801164 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:27.819592 [debug] [Thread-1 (]: SQL status: BEGIN in 0.018 seconds
+[0m13:18:27.820133 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.fct_air_quality_cumulative_exposure"
+[0m13:18:27.820584 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_cumulative_exposure: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.fct_air_quality_cumulative_exposure"} */
+
+  create view "rust_kafka"."public"."fct_air_quality_cumulative_exposure__dbt_tmp"
+    
+    
+  as (
+    select _time,
+    pm10_cumulative_24h,
+    pm2_5_cumulative_24h
+from "rust_kafka"."public"."int_pollutant_cumulative_exposure_24h"
+  );
+[0m13:18:27.823810 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.003 seconds
+[0m13:18:27.829042 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.fct_air_quality_cumulative_exposure"
+[0m13:18:27.829533 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_cumulative_exposure: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.fct_air_quality_cumulative_exposure"} */
+alter table "rust_kafka"."public"."fct_air_quality_cumulative_exposure__dbt_tmp" rename to "fct_air_quality_cumulative_exposure"
+[0m13:18:27.833610 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m13:18:27.835210 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_cumulative_exposure: COMMIT
+[0m13:18:27.835644 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.fct_air_quality_cumulative_exposure"
+[0m13:18:27.836068 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_cumulative_exposure: COMMIT
+[0m13:18:27.838811 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m13:18:27.841493 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."fct_air_quality_cumulative_exposure__dbt_backup"
+[0m13:18:27.842083 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.fct_air_quality_cumulative_exposure"
+[0m13:18:27.842471 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_cumulative_exposure: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.fct_air_quality_cumulative_exposure"} */
+drop view if exists "rust_kafka"."public"."fct_air_quality_cumulative_exposure__dbt_backup" cascade
+[0m13:18:27.843852 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m13:18:27.845399 [debug] [Thread-1 (]: On model.dbt_weather.fct_air_quality_cumulative_exposure: Close
+[0m13:18:27.846139 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1102bb9d0>]}
+[0m13:18:27.846915 [info ] [Thread-1 (]: 8 of 12 OK created sql view model public.fct_air_quality_cumulative_exposure ... [[32mCREATE VIEW[0m in 0.06s]
+[0m13:18:27.847601 [debug] [Thread-1 (]: Finished running node model.dbt_weather.fct_air_quality_cumulative_exposure
+[0m13:18:27.848093 [debug] [Thread-1 (]: Began running node model.dbt_weather.mart_monthly_avg_pollutants
+[0m13:18:27.848937 [info ] [Thread-1 (]: 9 of 12 START sql view model public.mart_monthly_avg_pollutants ................ [RUN]
+[0m13:18:27.849478 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.fct_air_quality_cumulative_exposure, now model.dbt_weather.mart_monthly_avg_pollutants)
+[0m13:18:27.849911 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.mart_monthly_avg_pollutants
+[0m13:18:27.854377 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.mart_monthly_avg_pollutants"
+[0m13:18:27.856766 [debug] [Thread-1 (]: Began executing node model.dbt_weather.mart_monthly_avg_pollutants
+[0m13:18:27.861405 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.mart_monthly_avg_pollutants"
+[0m13:18:27.862339 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_monthly_avg_pollutants"
+[0m13:18:27.862976 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_avg_pollutants: BEGIN
+[0m13:18:27.864630 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:27.886781 [debug] [Thread-1 (]: SQL status: BEGIN in 0.023 seconds
+[0m13:18:27.887316 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_monthly_avg_pollutants"
+[0m13:18:27.887723 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_avg_pollutants: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_monthly_avg_pollutants"} */
+
+  create view "rust_kafka"."public"."mart_monthly_avg_pollutants__dbt_tmp"
+    
+    
+  as (
+    select d.year,
+    d.month,
+    avg(f.pm10_rolling_24h) as avg_pm10,
+    avg(f.pm2_5_rolling_24h) as avg_pm2_5
+from "rust_kafka"."public"."fct_air_quality_measurements" f
+join "rust_kafka"."public"."dim_date" d on date(f._time) = d.day_date
+group by d.year, d.month
+  );
+[0m13:18:27.892384 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.004 seconds
+[0m13:18:27.895717 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_monthly_avg_pollutants"
+[0m13:18:27.896224 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_avg_pollutants: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_monthly_avg_pollutants"} */
+alter table "rust_kafka"."public"."mart_monthly_avg_pollutants__dbt_tmp" rename to "mart_monthly_avg_pollutants"
+[0m13:18:27.900361 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m13:18:27.901760 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_avg_pollutants: COMMIT
+[0m13:18:27.902190 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_monthly_avg_pollutants"
+[0m13:18:27.902556 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_avg_pollutants: COMMIT
+[0m13:18:27.904458 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m13:18:27.907103 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."mart_monthly_avg_pollutants__dbt_backup"
+[0m13:18:27.907721 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_monthly_avg_pollutants"
+[0m13:18:27.908105 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_avg_pollutants: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_monthly_avg_pollutants"} */
+drop view if exists "rust_kafka"."public"."mart_monthly_avg_pollutants__dbt_backup" cascade
+[0m13:18:27.909452 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m13:18:27.910907 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_avg_pollutants: Close
+[0m13:18:27.911609 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110173790>]}
+[0m13:18:27.912361 [info ] [Thread-1 (]: 9 of 12 OK created sql view model public.mart_monthly_avg_pollutants ........... [[32mCREATE VIEW[0m in 0.06s]
+[0m13:18:27.913116 [debug] [Thread-1 (]: Finished running node model.dbt_weather.mart_monthly_avg_pollutants
+[0m13:18:27.913573 [debug] [Thread-1 (]: Began running node model.dbt_weather.mart_weekday_weekend_pollution
+[0m13:18:27.914197 [info ] [Thread-1 (]: 10 of 12 START sql view model public.mart_weekday_weekend_pollution ............ [RUN]
+[0m13:18:27.914870 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.mart_monthly_avg_pollutants, now model.dbt_weather.mart_weekday_weekend_pollution)
+[0m13:18:27.915282 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.mart_weekday_weekend_pollution
+[0m13:18:27.919985 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.mart_weekday_weekend_pollution"
+[0m13:18:27.921137 [debug] [Thread-1 (]: Began executing node model.dbt_weather.mart_weekday_weekend_pollution
+[0m13:18:27.925940 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.mart_weekday_weekend_pollution"
+[0m13:18:27.926858 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_weekday_weekend_pollution"
+[0m13:18:27.927267 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_pollution: BEGIN
+[0m13:18:27.927626 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:27.949170 [debug] [Thread-1 (]: SQL status: BEGIN in 0.021 seconds
+[0m13:18:27.949736 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_weekday_weekend_pollution"
+[0m13:18:27.950148 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_pollution: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weekday_weekend_pollution"} */
+
+  create view "rust_kafka"."public"."mart_weekday_weekend_pollution__dbt_tmp"
+    
+    
+  as (
+    select d.is_weekend,
+    avg(f.pm2_5_rolling_24h) as avg_pm2_5,
+    avg(f.pm10_rolling_24h) as avg_pm10
+from "rust_kafka"."public"."fct_air_quality_measurements" f
+join "rust_kafka"."public"."dim_date" d on date(f._time) = d.day_date
+group by d.is_weekend
+  );
+[0m13:18:27.954418 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.004 seconds
+[0m13:18:27.957752 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_weekday_weekend_pollution"
+[0m13:18:27.958212 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_pollution: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weekday_weekend_pollution"} */
+alter table "rust_kafka"."public"."mart_weekday_weekend_pollution__dbt_tmp" rename to "mart_weekday_weekend_pollution"
+[0m13:18:27.962492 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m13:18:27.963899 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_pollution: COMMIT
+[0m13:18:27.964325 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_weekday_weekend_pollution"
+[0m13:18:27.964694 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_pollution: COMMIT
+[0m13:18:27.969155 [debug] [Thread-1 (]: SQL status: COMMIT in 0.004 seconds
+[0m13:18:27.974485 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."mart_weekday_weekend_pollution__dbt_backup"
+[0m13:18:27.975317 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_weekday_weekend_pollution"
+[0m13:18:27.975717 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_pollution: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weekday_weekend_pollution"} */
+drop view if exists "rust_kafka"."public"."mart_weekday_weekend_pollution__dbt_backup" cascade
+[0m13:18:27.977220 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m13:18:27.978794 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_pollution: Close
+[0m13:18:27.979505 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110332310>]}
+[0m13:18:27.980567 [info ] [Thread-1 (]: 10 of 12 OK created sql view model public.mart_weekday_weekend_pollution ....... [[32mCREATE VIEW[0m in 0.06s]
+[0m13:18:27.981829 [debug] [Thread-1 (]: Finished running node model.dbt_weather.mart_weekday_weekend_pollution
+[0m13:18:27.982838 [debug] [Thread-1 (]: Began running node model.dbt_weather.mart_monthly_total_exposure
+[0m13:18:27.984113 [info ] [Thread-1 (]: 11 of 12 START sql view model public.mart_monthly_total_exposure ............... [RUN]
+[0m13:18:27.985296 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.mart_weekday_weekend_pollution, now model.dbt_weather.mart_monthly_total_exposure)
+[0m13:18:27.986329 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.mart_monthly_total_exposure
+[0m13:18:27.995535 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.mart_monthly_total_exposure"
+[0m13:18:27.999282 [debug] [Thread-1 (]: Began executing node model.dbt_weather.mart_monthly_total_exposure
+[0m13:18:28.011983 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.mart_monthly_total_exposure"
+[0m13:18:28.013196 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_monthly_total_exposure"
+[0m13:18:28.013887 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_total_exposure: BEGIN
+[0m13:18:28.014735 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:28.037877 [debug] [Thread-1 (]: SQL status: BEGIN in 0.023 seconds
+[0m13:18:28.038930 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_monthly_total_exposure"
+[0m13:18:28.041083 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_total_exposure: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_monthly_total_exposure"} */
+
+  create view "rust_kafka"."public"."mart_monthly_total_exposure__dbt_tmp"
+    
+    
+  as (
+    select d.year,
+    d.month,
+    sum(f.pm10_cumulative_24h) as cumulative_pm10,
+    sum(f.pm2_5_cumulative_24h) as cumulative_pm2_5
+from "rust_kafka"."public"."fct_air_quality_cumulative_exposure" f
+join "rust_kafka"."public"."dim_date" d on date(f._time) = d.day_date
+group by d.year, d.month
+  );
+[0m13:18:28.050372 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.009 seconds
+[0m13:18:28.053920 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_monthly_total_exposure"
+[0m13:18:28.054368 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_total_exposure: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_monthly_total_exposure"} */
+alter table "rust_kafka"."public"."mart_monthly_total_exposure__dbt_tmp" rename to "mart_monthly_total_exposure"
+[0m13:18:28.058645 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.004 seconds
+[0m13:18:28.059988 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_total_exposure: COMMIT
+[0m13:18:28.060401 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_monthly_total_exposure"
+[0m13:18:28.060809 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_total_exposure: COMMIT
+[0m13:18:28.062732 [debug] [Thread-1 (]: SQL status: COMMIT in 0.002 seconds
+[0m13:18:28.065197 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."mart_monthly_total_exposure__dbt_backup"
+[0m13:18:28.065836 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_monthly_total_exposure"
+[0m13:18:28.066233 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_total_exposure: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_monthly_total_exposure"} */
+drop view if exists "rust_kafka"."public"."mart_monthly_total_exposure__dbt_backup" cascade
+[0m13:18:28.067371 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.001 seconds
+[0m13:18:28.068681 [debug] [Thread-1 (]: On model.dbt_weather.mart_monthly_total_exposure: Close
+[0m13:18:28.069350 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110330610>]}
+[0m13:18:28.070044 [info ] [Thread-1 (]: 11 of 12 OK created sql view model public.mart_monthly_total_exposure .......... [[32mCREATE VIEW[0m in 0.08s]
+[0m13:18:28.070680 [debug] [Thread-1 (]: Finished running node model.dbt_weather.mart_monthly_total_exposure
+[0m13:18:28.071108 [debug] [Thread-1 (]: Began running node model.dbt_weather.mart_weekday_weekend_cumulative_exposure
+[0m13:18:28.071710 [info ] [Thread-1 (]: 12 of 12 START sql view model public.mart_weekday_weekend_cumulative_exposure .. [RUN]
+[0m13:18:28.072243 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbt_weather.mart_monthly_total_exposure, now model.dbt_weather.mart_weekday_weekend_cumulative_exposure)
+[0m13:18:28.072644 [debug] [Thread-1 (]: Began compiling node model.dbt_weather.mart_weekday_weekend_cumulative_exposure
+[0m13:18:28.075984 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbt_weather.mart_weekday_weekend_cumulative_exposure"
+[0m13:18:28.076842 [debug] [Thread-1 (]: Began executing node model.dbt_weather.mart_weekday_weekend_cumulative_exposure
+[0m13:18:28.080831 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbt_weather.mart_weekday_weekend_cumulative_exposure"
+[0m13:18:28.081697 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_weekday_weekend_cumulative_exposure"
+[0m13:18:28.082153 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_cumulative_exposure: BEGIN
+[0m13:18:28.082910 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m13:18:28.102794 [debug] [Thread-1 (]: SQL status: BEGIN in 0.020 seconds
+[0m13:18:28.103328 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_weekday_weekend_cumulative_exposure"
+[0m13:18:28.103769 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_cumulative_exposure: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weekday_weekend_cumulative_exposure"} */
+
+  create view "rust_kafka"."public"."mart_weekday_weekend_cumulative_exposure__dbt_tmp"
+    
+    
+  as (
+    select d.is_weekend,
+    sum(f.pm10_cumulative_24h) as cumulative_pm10,
+    sum(f.pm2_5_cumulative_24h) as cumulative_pm2_5
+from "rust_kafka"."public"."fct_air_quality_cumulative_exposure" f
+join "rust_kafka"."public"."dim_date" d ON date(f._time) = d.day_date
+group by d.is_weekend
+  );
+[0m13:18:28.109159 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.005 seconds
+[0m13:18:28.112674 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_weekday_weekend_cumulative_exposure"
+[0m13:18:28.113109 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_cumulative_exposure: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weekday_weekend_cumulative_exposure"} */
+alter table "rust_kafka"."public"."mart_weekday_weekend_cumulative_exposure__dbt_tmp" rename to "mart_weekday_weekend_cumulative_exposure"
+[0m13:18:28.116965 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m13:18:28.118259 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_cumulative_exposure: COMMIT
+[0m13:18:28.118669 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_weekday_weekend_cumulative_exposure"
+[0m13:18:28.119038 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_cumulative_exposure: COMMIT
+[0m13:18:28.120853 [debug] [Thread-1 (]: SQL status: COMMIT in 0.001 seconds
+[0m13:18:28.123344 [debug] [Thread-1 (]: Applying DROP to: "rust_kafka"."public"."mart_weekday_weekend_cumulative_exposure__dbt_backup"
+[0m13:18:28.123947 [debug] [Thread-1 (]: Using postgres connection "model.dbt_weather.mart_weekday_weekend_cumulative_exposure"
+[0m13:18:28.124331 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_cumulative_exposure: /* {"app": "dbt", "dbt_version": "1.10.2", "profile_name": "dbt_weather", "target_name": "dev", "node_id": "model.dbt_weather.mart_weekday_weekend_cumulative_exposure"} */
+drop view if exists "rust_kafka"."public"."mart_weekday_weekend_cumulative_exposure__dbt_backup" cascade
+[0m13:18:28.127962 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.003 seconds
+[0m13:18:28.129307 [debug] [Thread-1 (]: On model.dbt_weather.mart_weekday_weekend_cumulative_exposure: Close
+[0m13:18:28.130000 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ba68d14d-30d9-470f-a4ff-1bd0bdfcecb6', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11011a4d0>]}
+[0m13:18:28.130742 [info ] [Thread-1 (]: 12 of 12 OK created sql view model public.mart_weekday_weekend_cumulative_exposure  [[32mCREATE VIEW[0m in 0.06s]
+[0m13:18:28.131373 [debug] [Thread-1 (]: Finished running node model.dbt_weather.mart_weekday_weekend_cumulative_exposure
+[0m13:18:28.132820 [debug] [MainThread]: Using postgres connection "master"
+[0m13:18:28.133248 [debug] [MainThread]: On master: BEGIN
+[0m13:18:28.133563 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m13:18:28.156940 [debug] [MainThread]: SQL status: BEGIN in 0.023 seconds
+[0m13:18:28.157559 [debug] [MainThread]: On master: COMMIT
+[0m13:18:28.157902 [debug] [MainThread]: Using postgres connection "master"
+[0m13:18:28.158213 [debug] [MainThread]: On master: COMMIT
+[0m13:18:28.159154 [debug] [MainThread]: SQL status: COMMIT in 0.001 seconds
+[0m13:18:28.159548 [debug] [MainThread]: On master: Close
+[0m13:18:28.160082 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m13:18:28.160464 [debug] [MainThread]: Connection 'model.dbt_weather.mart_weekday_weekend_cumulative_exposure' was properly closed.
+[0m13:18:28.160935 [info ] [MainThread]: 
+[0m13:18:28.161346 [info ] [MainThread]: Finished running 1 incremental model, 3 table models, 8 view models in 0 hours 0 minutes and 4.59 seconds (4.59s).
+[0m13:18:28.164069 [debug] [MainThread]: Command end result
+[0m13:18:28.217859 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather/target/manifest.json
+[0m13:18:28.220043 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather/target/semantic_manifest.json
+[0m13:18:28.227407 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/matthewbaxter/Documents/Programming/pytorch_kafka/dbt_weather/target/run_results.json
+[0m13:18:28.227922 [info ] [MainThread]: 
+[0m13:18:28.228447 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m13:18:28.228895 [info ] [MainThread]: 
+[0m13:18:28.229348 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=12
+[0m13:18:28.233139 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 13.488019, "process_in_blocks": "0", "process_kernel_time": 0.845133, "process_mem_max_rss": "132530176", "process_out_blocks": "0", "process_user_time": 5.661369}
+[0m13:18:28.233778 [debug] [MainThread]: Command `dbt run` succeeded at 13:18:28.233654 after 13.49 seconds
+[0m13:18:28.234263 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec49250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a25cd50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a25cc50>]}
+[0m13:18:28.234723 [debug] [MainThread]: Flushing usage events
+[0m13:18:28.490692 [debug] [MainThread]: An error was encountered while trying to flush usage events
